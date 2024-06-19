@@ -7,6 +7,10 @@ import Hero from '../components/Hero.vue';
 
 <template>
   <ParentLayout>
+
+    <!-- hack to remove sidebar. There is surely a better way /!\ -->
+    <template #sidebar><div></div></template> 
+    
     <template #page>
       <main class="HomeLayout">
         <Hero/>
