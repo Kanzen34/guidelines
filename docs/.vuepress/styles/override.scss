@@ -1,0 +1,333 @@
+// Colors should all be moved to palettes scss /!\  
+$text-color-light: #222;
+$text-color: #555;
+$text-color-dark: #ccc;
+$text-color-dark-light: #fafafa;
+$border-color: #bbb;
+$navbar-border: #eaecef;
+
+// Override navbar
+.vp-navbar {
+    border-bottom: 1px solid rgba($text-color-light, .2);
+
+    html.dark & {
+        border-bottom: 1px solid rgba($navbar-border, .2);
+    }
+}
+
+// Override navbar link
+.vp-navbar-item>a:hover,
+.vp-navbar-item>a.route-link-active,
+.theme-default-content a:not(.header-anchor) {
+    text-decoration: none;
+    border-bottom: 0px solid transparent;
+}
+
+// Override content elements
+.theme-default-content {
+    p {
+        line-height: 1.5;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        color: $text-color;
+
+        html.dark & {
+            color: $text-color-dark;
+        }
+    }
+
+
+    h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+
+        color: $text-color;
+
+        html.dark & {
+            color: $text-color-dark-light;
+        }
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+        color: $text-color;
+
+        html.dark & {
+            color: $text-color-dark-light;
+        }
+    }
+
+    h3 {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: $text-color;
+    }
+
+    code {
+        margin-left: 5px;
+        margin-right: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    hr {
+        margin-top: 70px;
+        margin-bottom: 30px;
+        border-color: $border-color;
+
+        html.dark & {
+            border-color: $text-color;
+        }
+
+    }
+
+    ul {
+        padding-left: 40px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+
+        li {
+            list-style: circle;
+        }
+    }
+
+    strong {
+        color: var(--pink-peaks);
+
+        html.dark & {
+            color: var(--pink-peaks-pastel);
+        }
+    }
+
+    code {
+        background-color: rgba(black, .1);
+
+        html.dark & {
+            background-color: rgba(white, .1);
+        }
+    }
+
+    a:not(.header-anchor) {
+        color: #2c3e50;
+        transition: color .3s;
+
+        html.dark & {
+            color: $text-color-dark-light;
+
+            &:hover {
+                color: var(--pink-peaks-pastel);
+            }
+        }
+
+        &:hover {
+            color: var(--pink-peaks);
+        }
+    }
+
+    div[class*=language-] {
+        border-radius: 0;
+
+        &.line-numbers-mode .line-numbers .line-number {
+            height: 27.5px;
+        }
+
+        pre {
+
+            /* width */
+            &::-webkit-scrollbar {
+                width: 12px;
+                height: 12px;
+            }
+
+            /* Track */
+            &::-webkit-scrollbar-track {
+                background: #24262b;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                overflow: hidden;
+            }
+
+            /* Handle */
+            &::-webkit-scrollbar-thumb {
+                background: #41444b;
+                // border-radius: 10px;
+            }
+
+            /* Handle on hover */
+            &::-webkit-scrollbar-thumb:hover {
+                background: #52545b;
+            }
+        }
+    }
+
+    // Override the navigation on top of code elements
+    .code-group-nav {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        background-color: var(--pink-peaks);
+        padding-bottom: calc(1.7rem - 0px);
+
+        html.dark & {
+            background-color: var(--pink-peaks-pastel);
+
+            button {
+                color: $text-color-light;
+            }
+        }
+    }
+
+    // Override the navigation on top of code elements
+    .code-group-nav-tab {
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 3px;
+        transition: background-color .15s;
+        border-radius: 20px;
+
+        &:hover {
+            background-color: rgba(white, .15);
+        }
+
+        &.active {
+            background-color: rgba(white, .15);
+        }
+
+        html.dark & {
+            &:hover {
+                background-color: rgba(white, .3);
+            }
+
+            &.active {
+                background-color: rgba(white, .3);
+            }
+        }
+    }
+
+    // Override token in code exemple
+    .token.boolean,
+    .token.number,
+    .token.function {
+        color: var(--pink-peaks);
+
+        html.dark & {
+            color: var(--pink-peaks-pastel);
+        }
+    }
+
+    // override the copy/paste button on code element hover
+    .vp-copy-code-button::before {
+        transition: opacity .15s;
+    }
+}
+
+// Override external links
+.external-link-icon .theme-default-content a[href*="://"]:not(.no-external-link-icon)::after,
+.external-link-icon .theme-default-content a[target=_blank]:not(.no-external-link-icon)::after {
+    width: 14px;
+    height: 14px;
+    background-color: var(--pink-peaks);
+
+    html.dark & {
+        background-color: var(--pink-peaks-pastel);
+    }
+}
+
+// Override Sidebar
+.vp-sidebar {
+    border-right: 1px solid rgba($text-color-light, .2);
+
+    html.dark & {
+        border-right: 1px solid rgba($navbar-border, .2);
+    }
+}
+
+// Override Sidebar children
+.vp-sidebar-children {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+
+// Override Sidebar children
+.vp-sidebar-children .vp-sidebar-children .vp-sidebar-item:not(.active):not(.vp-sidebar-heading) {
+    color: rgba($text-color-light, .5) !important;
+
+    html.dark & {
+        color: rgba($border-color, .5) !important;
+    }
+}
+
+// Override Sidebar children
+.vp-sidebar-children .vp-sidebar-children .vp-sidebar-item:not(.vp-sidebar-heading) {
+    padding: 0.25rem 1rem 0.25rem 2.2rem;
+}
+
+// Override the tip, warning, error component
+.custom-container {
+
+    box-shadow: 0 0 20px rgba(0, 0, 0, .05);
+
+    .custom-container-title:not(:only-child) {
+        margin-bottom: 5px;
+    }
+
+    &.warning,
+    &.tip {
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        p:not(.custom-container-title) {
+            color: #555;
+        }
+
+        html.dark & {
+            p:not(.custom-container-title) {
+                color: #aaa;
+            }
+        }
+    }
+
+    &.warning {
+        background-color: var(--c-tip-bg);
+    }
+
+    &.tip {
+        border-color: var(--pink-peaks-pastel);
+    }
+
+    a.header-anchor {
+        &::before {
+            content: "¶";
+            position: absolute;
+            top: 0.4167em;
+            left: -0.75em;
+            color: var(--c-brand);
+            font-size: 0.75em;
+            transition: color .3s, opacity .15s;
+            opacity: 0;
+        }
+
+        &:hover {
+            &::before {
+                opacity: 1;
+                color: var(--pink-peaks);
+            }
+        }
+
+        html.dark & {
+            &:hover {
+                &::before {
+                    color: var(--pink-peaks-pastel);
+                }
+            }
+        }
+    }
+}
+
+// Override back to top button
+.vp-back-to-top-button {
+    --back-to-top-color: var(--pink-peaks-pastel);
+    --back-to-top-color-hover: var(--pink-peaks-pastel);
+}

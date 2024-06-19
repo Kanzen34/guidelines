@@ -1,0 +1,40 @@
+// override link color
+html.dark {
+    // VuePress colors
+    --c-bg: #222;
+    --c-bg-rgb: 34, 34, 34;
+    --c-bg-rgb-reverse: 240, 240, 240;
+    --c-text-accent: var(--pink-peaks-pastel);
+    --text-color: #adbac7;
+    --text-color-rgb: 173, 186, 199;
+    --c-brand: #ff91c4;
+    --c-tip-title: #fafafa;
+    // --code-bg-color: #111;
+}
+
+:root {
+    // VuePress colors
+    --c-bg: #f0F0F0;
+    --c-bg-rgb: 240, 240, 240;
+    --c-bg-rgb-reverse: 34, 34, 34;
+    --c-text-accent: var(--pink-peaks);
+    // vueJS colors
+    --green-vue: #42b883;
+    --blue-vue: #35495e;
+    // Peaks colors
+    --pink-peaks: #E74E96;
+    --c-brand: #E74E96;
+    --pink-peaks-pastel: #ff91c4;
+    --text-color-rgb: 34, 34, 34;
+    --c-tip-title: #555;
+}
+
+body {
+    --c-text: #222;
+    --c-text-lighter: #777;
+
+    html.dark & {
+        --c-text: #bbb;
+        --c-text-lighter: #777;
+    }
+}
