@@ -71,24 +71,29 @@ const cardCssClass = computed(() => {
     height: 250px;
     padding: 10px;
     padding-top: 65px;
-    border: 1px solid rgba(255,255,255, .1);
-    border-radius: 10px;
-    box-shadow: 0 0 25px rgba(#000, .0);
-    background-color: #f7f7f7;
-    transition: transform .6s, filter .6s, gap .6s, padding .6s, box-shadow .6s;
+    // border: 1px solid rgba(255,255,255, .1);
+    // border-radius: 10px;
+    // box-shadow: 0 0 25px rgba(#000, .0);
+    // background-color: #f7f7f7;
+    transition: transform .6s, filter .6s, gap .6s, padding .6s, box-shadow .6s, background-color .6s;
     cursor: pointer;
     filter:grayscale(90%);    
 
     .dark & {
-        background-color: rgba(var(--c-bg-rgb-reverse), .05);
+        // background-color: rgba(var(--c-bg-rgb-reverse), .05);
     }
 }
 
 .Card:hover {
     gap: 5px;
     padding-top: 10px;
-    box-shadow: 0 0 20px rgba(#000, .05);
+    // box-shadow: 0 0 20px rgba(#000, .05);
     filter:grayscale(0%);
+
+    box-shadow: 0 0 25px rgba(#000, .0);
+    .dark & {
+        background-color: rgba(var(--c-bg-rgb-reverse), .05);
+    }
 
     .Card-icon {
         width: 40px;

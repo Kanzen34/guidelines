@@ -1,5 +1,5 @@
 import comp from "C:/www/peaksGuidelines/vuepress-starter/docs/.vuepress/.temp/pages/index.html.vue"
-const data = JSON.parse("{\"path\":\"/\",\"title\":\"Home\",\"lang\":\"fr-FR\",\"frontmatter\":{\"home\":false,\"title\":\"Home\",\"layout\":\"HomeLayout\"},\"headers\":[],\"git\":{\"updatedTime\":1718792309000,\"contributors\":[{\"name\":\"Nicolas Fradin\",\"email\":\"n.fradin@peaks.fr\",\"commits\":2}]},\"filePathRelative\":\"README.md\",\"excerpt\":\"\\n<p>In progress</p>\\n\"}")
+const data = JSON.parse("{\"path\":\"/\",\"title\":\"Home\",\"lang\":\"fr-FR\",\"frontmatter\":{\"home\":false,\"title\":\"Home\",\"layout\":\"HomeLayout\"},\"headers\":[],\"git\":{\"updatedTime\":1718793414000,\"contributors\":[{\"name\":\"Nicolas Fradin\",\"email\":\"n.fradin@peaks.fr\",\"commits\":3}]},\"filePathRelative\":\"README.md\",\"excerpt\":\"\\n<p>In progress</p>\\n\"}")
 export { comp, data }
 
 if (import.meta.webpackHot) {

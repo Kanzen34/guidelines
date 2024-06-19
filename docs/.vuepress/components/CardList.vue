@@ -59,10 +59,8 @@ const articles = useBlogType('article')
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 52px;
-    padding-top: calc(var(--navbar-height) + 50px);
-    padding-bottom: 2rem;
-    padding-left: var(--sidebar-width);
-    padding-right: var(--sidebar-width);
+    width: 100%;
+    max-width: 1000px;
+    margin: 100px auto;
 }
 </style>

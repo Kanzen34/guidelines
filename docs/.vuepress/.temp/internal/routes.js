@@ -2,6 +2,7 @@ export const redirects = JSON.parse("{}")
 
 export const routes = Object.fromEntries([
   ["/get-started.html", { loader: () => import(/* webpackChunkName: "get-started.html" */"C:/www/peaksGuidelines/vuepress-starter/docs/.vuepress/.temp/pages/get-started.html.js"), meta: {"title":"Get Started"} }],
+  ["/", { loader: () => import(/* webpackChunkName: "index.html" */"C:/www/peaksGuidelines/vuepress-starter/docs/.vuepress/.temp/pages/index.html.js"), meta: {"title":"Home"} }],
   ["/posts/general.html", { loader: () => import(/* webpackChunkName: "posts_general.html" */"C:/www/peaksGuidelines/vuepress-starter/docs/.vuepress/.temp/pages/posts/general.html.js"), meta: {"_blog":{"title":"General rules","author":"Nicolas Fradin","date":"2024-06-19T00:00:00.000Z","category":["Frontend","Backend","Developpement"],"tag":["General"],"excerpt":"general"},"title":"General rules"} }],
   ["/posts/html.html", { loader: () => import(/* webpackChunkName: "posts_html.html" */"C:/www/peaksGuidelines/vuepress-starter/docs/.vuepress/.temp/pages/posts/html.html.js"), meta: {"_blog":{"title":"HTML AND TEMPLATING","author":"Nicolas Fradin","date":"2024-06-19T00:00:00.000Z","category":["Frontend","Developpement"],"tag":["html","accessibility","templating","Semantic"],"excerpt":"html"},"title":"HTML AND TEMPLATING"} }],
   ["/posts/js.html", { loader: () => import(/* webpackChunkName: "posts_js.html" */"C:/www/peaksGuidelines/vuepress-starter/docs/.vuepress/.temp/pages/posts/js.html.js"), meta: {"_blog":{"title":"Javascript","author":"Nicolas Fradin","date":"2024-06-19T00:00:00.000Z","category":["Frontend","Developpement"],"tag":["javascript"],"excerpt":"js"},"title":"Javascript"} }],
@@ -23,7 +24,6 @@ export const routes = Object.fromEntries([
   ["/tag/css/", { loader: () => import(/* webpackChunkName: "tag_css_index.html" */"C:/www/peaksGuidelines/vuepress-starter/docs/.vuepress/.temp/pages/tag/css/index.html.js"), meta: {"title":"Tag css"} }],
   ["/article/", { loader: () => import(/* webpackChunkName: "article_index.html" */"C:/www/peaksGuidelines/vuepress-starter/docs/.vuepress/.temp/pages/article/index.html.js"), meta: {"title":"Articles"} }],
   ["/timeline/", { loader: () => import(/* webpackChunkName: "timeline_index.html" */"C:/www/peaksGuidelines/vuepress-starter/docs/.vuepress/.temp/pages/timeline/index.html.js"), meta: {"title":"Timeline"} }],
-  ["/", { loader: () => import(/* webpackChunkName: "index.html" */"C:/www/peaksGuidelines/vuepress-starter/docs/.vuepress/.temp/pages/index.html.js"), meta: {"title":"Home"} }],
 ]);
 
 if (import.meta.webpackHot) {
