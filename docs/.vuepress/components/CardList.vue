@@ -17,6 +17,11 @@ const articles = useBlogType('article')
         <Card title="Angular" icon="angular" description="Good practices and tips for better angular coding" /> 
         -->
 
+        <div class="CardList-header">
+            <h2 class="title">List of articles</h2>
+            <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto ipsum non inventore earum sapiente accusamus recusandae vel nisi rem doloremque?</p>
+        </div>
+
         <div
             v-for="{ info, path } in articles.items"
             @click="$router.push(path)"
@@ -26,12 +31,14 @@ const articles = useBlogType('article')
                 v-if="info.excerpt === 'html'"
                 @click="$router.push(info.path)"
                 :icon="info.excerpt"
+                :category="info.category"
                 description="Good practices and tips for better html coding and templating"
                 title="HTML5"
             />
             <Card
                 v-if="info.excerpt === 'sass'"
                 @click="$router.push(info.path)"
+                :category="info.category"
                 :icon="info.excerpt"
                 description="Good practices and tips for better sass/scss/css coding and templating"
                 title="Sass/Scss/Css"
@@ -39,6 +46,7 @@ const articles = useBlogType('article')
             <Card
                 v-if="info.excerpt === 'js'"
                 @click="$router.push(info.path)"
+                :category="info.category"
                 :icon="info.excerpt"
                 description="Good practices and tips for better javascript coding and templating"
                 title="Javascript"
@@ -46,6 +54,7 @@ const articles = useBlogType('article')
             <Card
                 v-if="info.excerpt === 'general'"
                 @click="$router.push(info.path)"
+                :category="info.category"
                 :icon="info.excerpt"
                 description="General rules for an harmonized coding team"
                 title="General rules"
@@ -60,7 +69,13 @@ const articles = useBlogType('article')
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
-    max-width: 1000px;
+    max-width: 1040px;
+    padding: 0 20px;
     margin: 100px auto;
+}
+
+.CardList-header {
+    margin-bottom: 40px;
+    text-align: center;
 }
 </style>

@@ -2,6 +2,7 @@
 import ParentLayout from '@vuepress/theme-default/layouts/Layout.vue'
 import CardList from '../components/CardList.vue';
 import Hero from '../components/Hero.vue';
+import GradientLine from '../components/GradientLine.vue';
 
 </script>
 
@@ -14,8 +15,9 @@ import Hero from '../components/Hero.vue';
     <template #page>
       <main class="HomeLayout">
         <Hero/>
-        <CardList 
-        />
+        <GradientLine />
+        <CardList />
+        <GradientLine />
       </main>
     </template>
   </ParentLayout>
@@ -24,7 +26,6 @@ import Hero from '../components/Hero.vue';
 <style lang="scss">
 @use '@vuepress/theme-default/styles/mixins';
 
-.HomeLayout {
+.HomeLayout {}
 
-}
 </style>

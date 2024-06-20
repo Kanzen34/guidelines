@@ -2,7 +2,7 @@
 date: 2024-06-19
 category:
   - Frontend
-  - Developpement
+  - Guidelines
 tag:
   - scss
   - sass

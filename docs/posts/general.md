@@ -3,7 +3,7 @@ date: 2024-06-19
 category:
   - Frontend
   - Backend
-  - Developpement
+  - Guidelines
 tag:
   - General
 author: Nicolas Fradin

@@ -1,4 +1,5 @@
-<template><div><h1 id="html-and-templating" tabindex="-1"><a class="header-anchor" href="#html-and-templating"><span>HTML AND TEMPLATING</span></a></h1>
+<template><div><!-- ![VuePress Logo](./images/html-background.jpg) -->
+<h1 id="html-and-templating" tabindex="-1"><a class="header-anchor" href="#html-and-templating"><span>HTML AND TEMPLATING</span></a></h1>
 <h2 id="formatting" tabindex="-1"><a class="header-anchor" href="#formatting"><span>Formatting</span></a></h2>
 <p>HTML’s syntax can be very flexible, and browsers will try to deal with errors silently. To make our code more robust and consistent, follow these rules:</p>
 <ul>

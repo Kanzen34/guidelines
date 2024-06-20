@@ -2,7 +2,7 @@
 date: 2024-06-19
 category:
   - Frontend
-  - Developpement
+  - Guidelines
 tag:
   - html
   - accessibility
@@ -10,7 +10,11 @@ tag:
   - Semantic
 author: Nicolas Fradin
 excerpt: html
+heroImage: 
 ---
+
+<!-- ![VuePress Logo](./images/html-background.jpg) -->
+
 # HTML AND TEMPLATING
 
 ## Formatting
