@@ -69,7 +69,7 @@ const categoryMap = useBlogCategory('category')
 
 .Hero-container {
     width: 100%;
-    max-width: 1040;
+    max-width: 1040px;
     padding-top: 100px;
     padding-bottom: 100px;
     padding-left:20px;
