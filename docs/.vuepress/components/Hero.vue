@@ -95,7 +95,7 @@ const categoryMap = useBlogCategory('category')
         background-clip: text;
         -webkit-text-fill-color: transparent;
         background-size: 400% 400%;
-        animation: gradient 15s ease infinite;
+        animation: gradient 25s ease infinite;
     }
 
     html.dark {
